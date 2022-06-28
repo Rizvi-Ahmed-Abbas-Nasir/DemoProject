@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="" />
+       <link rel="stypesheet" href="{% static 'index.css' %}" />
+       <title>Django Social Auth</title>
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div>
+                <h1 class="text-white text-center">{% block title %} {% endblock %}</h1>
+                <div class="card p-5">
+                    {% block content  %}
+                    {% endlock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
