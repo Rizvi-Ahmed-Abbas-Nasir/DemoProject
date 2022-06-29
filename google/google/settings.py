@@ -66,6 +66,7 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.github.GithubOAuth2',
 
     'django.contrib.auth.backends.ModelBackend',
+    
 )
 
 
@@ -84,7 +85,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
 
-                 'social_django.context_processors.backends',  # <-- Here
+                 'social_django.context_processors.backends',
+                # <-- Here
             
             ],
         },
@@ -159,5 +161,5 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_URL = 'logout'
 LOGOUT_REDIRECT_URL = 'login'
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '##################'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRETY = '##########'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '489388000209-4i4op4mv5vlc9d32i98r7s1tnf1vc3dt.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRETY = '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'

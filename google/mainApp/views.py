@@ -8,4 +8,4 @@ def login(request):
 
 @login_required
 def home(request):
-    return render(render,'home.html')
+    return render(request,'home.html')
